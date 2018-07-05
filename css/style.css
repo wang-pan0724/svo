@@ -74,7 +74,7 @@ body {
 #footer {
 	background-color: #222222;
 	border-top: 1px solid #222222;
-	padding: 20px;
+	padding: 40px 20px;
 	text-align: center;
 }
 /*没有小于768px，是因为Bootstrap3以移动端优先设计*/

@@ -13,6 +13,7 @@ body {
     border: none;
     height: 66px;
     line-height: 66px;
+    padding: 0px 20px;
 }
 
 .navstyle{
@@ -38,6 +39,11 @@ body {
 .main{
     width: 100%;
     margin-top: 66px;
+    height: auto;
+}
+
+.gradient{
+    height: auto;
 }
 
 .backbox{
@@ -52,9 +58,9 @@ body {
     left:0;
     background-color: #222222;
 }
-.canvas-wrap{
+.canvas-wraps{
     position:relative;
-
+    height: 100%;
 }
 div.canvas-content{
     position:relative;
@@ -66,7 +72,7 @@ div.canvas-content{
 
 .svoImg{
     position: absolute;
-    z-index: 999999;
+    z-index: 1;
     width: 60%;
     left: 50%;
     top: 80px;
@@ -139,6 +145,11 @@ div.canvas-content{
     padding: 100px 0px;
 }
 
+.xxxxx {
+    position: relative;
+    z-index: 20;
+}
+
 .itemList{
     text-align: center;
     padding: 20px;
@@ -146,7 +157,41 @@ div.canvas-content{
 .itemList img{
     display: block;
     margin: 0 auto;
+    /* animation: spinDisc 3s linear; */
+}
+.itemList:hover img{
     animation: spinDisc 3s linear;
+}
+
+.addAnimate {
+    transform: scale(0);
+}
+
+.aniBox .addAnimate {
+    animation: scale 1s linear;
+    transform: scale(1);
+}
+
+.wow{
+    color: #222222;
+}
+
+.markdiv{
+    color: #222222;
+}
+
+.marktitle{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(0)
+    }
+    100%{
+        transform: scale(1)
+    }
 }
 
 @keyframes spinDisc {
@@ -157,6 +202,7 @@ div.canvas-content{
         transform: rotate(1turn);
     }
 }
+
 
 .itemList h5:first-child{
     font-size: 16px;
@@ -324,6 +370,6 @@ div.canvas-content{
 
 @media (min-width:1400px) {
     #canvas,.main {
-        height:768px
+        height:920px
     }
 }

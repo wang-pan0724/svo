@@ -17,7 +17,12 @@ body {
 }
 
 .navstyle{
-    height: 66px;
+    /*height: 66px;*/
+    background: #222222;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border: none;
 }
 
 .navstyle li{
@@ -29,12 +34,13 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a:hover{
-    color: red;
+    color: #333333;
+    background-color: #E7E7E7;
 }
 
-.navbar-default .navbar-nav>li>a:hover{
-    color: red;
-}
+/*.navbar-default .navbar-nav>li>a:hover{*/
+    /*color: red;*/
+/*}*/
 
 .main{
     width: 100%;
@@ -122,22 +128,22 @@ div.canvas-content{
     37.5% {
         background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#3498db, #3498db) 0.625em 50%, linear-gradient(#9b59b6, #9b59b6) 1.25em 50%, linear-gradient(#9b59b6, #9b59b6) 1.875em 50%, linear-gradient(#9b59b6, #9b59b6) 2.5em 50%;
         background-repeat: no-repeat;
-        background-size: 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em;
+        background-size: 0.5em 0.25em, 0.3em 2em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em;
     }
     50% {
         background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#9b59b6, #9b59b6) 0.625em 50%, linear-gradient(#3498db, #3498db) 1.25em 50%, linear-gradient(#9b59b6, #9b59b6) 1.875em 50%, linear-gradient(#9b59b6, #9b59b6) 2.5em 50%;
         background-repeat: no-repeat;
-        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em, 0.5em 0.25em;
+        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.3em 2em, 0.5em 0.25em, 0.5em 0.25em;
     }
     62.5% {
         background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#9b59b6, #9b59b6) 0.625em 50%, linear-gradient(#9b59b6, #9b59b6) 1.25em 50%, linear-gradient(#3498db, #3498db) 1.875em 50%, linear-gradient(#9b59b6, #9b59b6) 2.5em 50%;
         background-repeat: no-repeat;
-        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em;
+        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.3em 2em, 0.5em 0.25em;
     }
     75% {
         background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#9b59b6, #9b59b6) 0.625em 50%, linear-gradient(#9b59b6, #9b59b6) 1.25em 50%, linear-gradient(#9b59b6, #9b59b6) 1.875em 50%, linear-gradient(#3498db, #3498db) 2.5em 50%;
         background-repeat: no-repeat;
-        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em;
+        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.3em 2em;
     }
 }
 
@@ -174,15 +180,47 @@ div.canvas-content{
 
 .wow{
     color: #222222;
+    padding: 60px 0px;
+}
+
+.wowFirst{
+    margin-bottom: 30px;
+}
+
+.wowmargin{
+    margin-bottom: 15px;
+}
+
+.wowTitle{
+    display: table-cell;
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 600;
+}
+
+.wowNextTitle{
+    display: table-cell !important;
+    padding-left: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 18px;
+    color: #232323;
+}
+
+.width-90{
+    width: 90%;
+    color: #8F916F;
 }
 
 .markdiv{
     color: #222222;
+    padding: 40px 0px;
 }
 
 .marktitle{
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 20px;
 }
 
 @keyframes scale{

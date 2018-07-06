@@ -520,22 +520,20 @@
 			});
 
 
+//
+//			$('.navstyle').find('li').each(function (){
+//				this.removeClass('active');
+//				this.on('click',function(){
+//					$(this).addClass('active');
+//				})
+//			})
 
-			$('.navstyle').find('li').each(function () {
-
-				this.click(function(){
-					this.addClass("active");
-				})
-//				if($('#mark').offset().top==80){
-//					debugger;
-//				}
-//				if (this.href == document.location.href || document.location.href.search(this.href) >= 0) {
-//					$(this).parent().addClass('active'); // this.className = 'active';
-//				}else{
-//					$(this).parent().removeClass('active');
-//				}
+			$('.navstyle li').click(function () {
+				var f = this;
+				$('.navstyle li').each(function () {
+					this.className = this == f ? 'active' : ''
+				});
 			});
-
 
 		});
 

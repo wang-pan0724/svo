@@ -89,6 +89,7 @@ div.canvas-content{
     width: 100%;
     height: auto;
     font-weight: 200;
+    z-index: 99;
     /* background-image: url(../img/slide5.png) !important;
     background-size: ccover */
 }
@@ -100,6 +101,8 @@ div.canvas-content{
 }
 
 .box3{
+    position: relative;
+    z-index: 99;
     padding: 40px 0px;
 }
 
@@ -339,6 +342,10 @@ div.canvas-content{
     font-size: 14px;
     margin: 60px auto 0px;
     background-image: linear-gradient(to right, #ff7000 0, #ff0000 100%);
+}
+
+.box6 .phone a{
+    color: #ffffff;
 }
 @keyframes logofly
 {
